@@ -65,7 +65,7 @@ main{
     width: 95vw;
     margin-left: 5vw;
 }
-.secction1, .secction2, .secction3, .secction4 , .secction5{
+.secction1, .secction2, .secction3 , .secction5{
     height: 100vh;
     display: flex;
     flex-direction:column;
@@ -82,7 +82,7 @@ main{
     text-align: center;
 }
 .HomeImgSection{
-    height: 36vh;
+    height: 40vh;
     width: 40vh;
     border: 4px solid rgb(39,47,62);
     border-radius: 100%;
@@ -106,7 +106,7 @@ main{
         border: 4px solid rgb(39,47,62);}
 }
 .homeImage{
-    height: 36vh;
+    height: 40vh;
     width: 40vh;
     border-radius: 100%;
     animation: HomeImageAnimation 1.5s;
@@ -232,6 +232,73 @@ main{
 }
 .secction4{
     background-color: rgb(2,48,71);
+    display: flex;
+    flex-direction:column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 50px;
+    /* height: 100vh; */
+}
+.cardsSection div{
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 25vw;
+    margin-bottom: 30px;
+}
+.cardsSection{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.projectCard{
+    height: 30vh;
+    width: 100%;
+    background-color: white;
+    /* padding: 10px; */
+    border-radius: 10px ;
+}
+.projectCard img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top center;
+    border-radius: 10px;
+    transition: all 2s ease-in-out;
+}
+.projectCard img:hover{
+    object-position: bottom center;
+}
+.projectLinks a{
+    text-decoration: none;
+    padding:10px;
+}
+.codes{
+    color: rgb(2,48,71);
+    border: 2px solid rgb(2,48,71);
+    border-radius: 20px;
+    margin-bottom: 10px;
+    transition: all 1s ease-out;
+}
+.live{
+    color: white;
+    border-radius: 20px;
+    background-color: rgb(2,48,71);
+    border: 2px solid rgb(2,48,71);
+    transition: all 1s ease-out;
+}
+.live:hover{
+    color: rgb(2,48,71);
+    border: 2px solid rgb(2,48,71);
+    background-color: white;
+}
+.codes:hover{
+    background-color: rgb(2,48,71);
+    color: white;
 }
 .secction5{
     background-color: rgb(109,89,122);
@@ -245,7 +312,7 @@ main{
 }
 .formInfoSection{
     width: 40vw;
-    background-color: green;
+    /* background-color: green; */
 }
 .formSection{
     width: 45vw;
@@ -262,9 +329,15 @@ main{
 }
 .formSection input:hover{
     outline: 2px solid greenyellow;
+    border: none;
+}
+textarea{
+    color: white;
+    font-family: Raleway;
 }
 textarea:hover{
     outline: 2px solid greenyellow;
+    border: none;
 }
 ::placeholder{
     color: white;
@@ -289,6 +362,13 @@ textarea{
     border-radius: 10px;
     border: none;
 }
+.icons a{
+    color: white;
+}
+.formInfoSection .location:hover >.licon{
+    color: black;
+    transition: all 0.5 ease-in;
+}
 @media (max-width:768px) {
     .nevbar{
         background-color: rgb(58,85,121);
@@ -300,7 +380,7 @@ textarea{
         align-items: center;
         position: sticky;
         top:0px;
-        z-index: 111111;
+        z-index: 10000000000000000000;
     }
     .nevbar h3{
         width: 90%;
@@ -417,15 +497,40 @@ textarea{
         justify-content: space-between;
         width: 70vw;
     }
+    .secction4{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+    .secction4 h1{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 22px;
+    }
+    .secction4 p{
+        margin-bottom: 20px;
+    }
+    .cardsSection div{
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    .cardsSection .projectCard{
+        width: 100%;
+    }
     .secction5{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 800px;
+        height: 950px;
     }
     .formInfoSection{
-        width: 100%;
+        width: 90%;
+        margin-top: 110px;
     }
     .formSection{
         width: 100%;
@@ -433,9 +538,9 @@ textarea{
         margin-right: auto;
     }
     .formSection input{
-        width: 40%;
+        width: 43%;
     }
     textarea{
-        width: 90%;
+        width: 93%;
     }
 }
