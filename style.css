@@ -229,7 +229,59 @@ main{
 .secction3{
     background-color: rgb(152,193,217);
     scroll-behavior: smooth;
+    display: flex;
+    justify-content: space-evenly;
 }
+.servicessCards{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.webServCard,.graphicCard, .wordpressCard{
+    width: 30%;
+    /* border: 2px solid white; */
+    background-color: white;
+    color: rgb(39,47,62);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: all 0.5s ease-in;
+    line-height: 35px;
+}
+.servicessCards i{
+    font-size: 40px;
+    padding: 20px;
+}
+.webServCard{
+    border-left: 4px solid rgb(39,47,62);
+}
+.webServCard:hover{
+    color: white;
+    box-shadow: 2px 2px 20px rgb(39,47,62);
+    background-color: rgb(39,47,62);
+    border: 2px solid rgb(39,47,62);
+}
+.graphicCard{
+    border-left: 4px solid rgb(58,85,121);
+}
+.graphicCard:hover{
+    color: white;
+    box-shadow: 2px 2px 20px rgb(58,85,121);
+    background-color: rgb(58,85,121);
+    border: 2px solid rgb(58,85,121);
+}
+.wordpressCard{
+    border-left: 4px solid rgb(2,48,71);
+}
+.wordpressCard:hover{
+    color: white;
+    box-shadow: 2px 2px 20px rgb(2,48,71);
+    background-color: rgb(2,48,71);
+    border: 2px solid rgb(2,48,71);
+}
+
 .secction4{
     background-color: rgb(2,48,71);
     display: flex;
@@ -237,7 +289,9 @@ main{
     justify-content: space-evenly;
     align-items: center;
     padding: 50px;
-    /* height: 100vh; */
+}
+.secction4 p{
+    margin-bottom: 30px;
 }
 .cardsSection div{
     background-color: white;
@@ -301,6 +355,7 @@ main{
     color: white;
 }
 .secction5{
+    padding-top: 50px;
     background-color: rgb(109,89,122);
     display: flex;
     justify-content: space-evenly;
@@ -497,6 +552,22 @@ textarea{
         justify-content: space-between;
         width: 70vw;
     }
+    .secction3{
+        height: 1400px;
+    }
+    .servicessCards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 80%;
+    }
+    .webServCard ,.graphicCard,.wordpressCard{
+        width: 95%;
+        margin-bottom: 30px;
+    }
     .secction4{
         padding-top: 50px;
         padding-bottom: 50px;
@@ -526,7 +597,11 @@ textarea{
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 950px;
+        height: 1100px;
+    }
+    .errorMessage{
+        width: 90%;
+        font-size: 14px;
     }
     .formInfoSection{
         width: 90%;

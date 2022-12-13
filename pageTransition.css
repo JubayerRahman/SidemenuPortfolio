@@ -1,0 +1,18 @@
+.secction1, .secction2, .secction3, .secction4, .secction5 {
+    /* animation: pagetransition .5s ease-out; */
+    animation: pagetransition 0.5s ease-out;
+}
+@keyframes pagetransition {
+    from{
+        opacity: 0;
+        transform: rotateY(-120deg);
+    }
+    from{
+        opacity: 1;
+        transform: rotateY(0deg);
+    }
+}
+.errorMessage{
+    color: orange;
+    font-style: italic;
+}
