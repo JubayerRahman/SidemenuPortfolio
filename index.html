@@ -8,12 +8,17 @@
     type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./pageTransition.css">
+    <!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" 
+    crossorigin="anonymous">
     <title>Jobayer Rahman | A web master</title>
 </head>
 <body>
     <div class="nevbar">
         <button id="menu" title="Menu"><i id="Icon" class="fa-solid fa-bars"></i></button>
-        <h3>Jobayer Rahman</h3>
+        <h3 class="en">Jobayer Rahman</h3>
+        <h3 class="banglaData">জুবায়ের রাহমান</h3>
     </div>
     <main>
         <div class="sidenevbar" id="sidenevbar">
@@ -22,6 +27,13 @@
             <a href="#secction3" title="Service"><i class="fa-solid fa-briefcase"></i></a>
             <a href="#secction4" title="Projects"><i class="fa-solid fa-copy"></i></a>
             <a href="#secction5" title="Contact" class="contact"><i class="fa-solid fa-comment"></i></a>
+            <div class="language">
+                <h4>Eng</h4>
+                <div class="form-check form-switch">
+                    <input id="switch" class="form-check-input" type="checkbox" role="switch">
+                </div>
+                <h4 class="bangla">বাংলা</h4>               
+            </div>
             <p class="rights">© Designed & coded by Jobayer Rahman</p>
         </div>
         <div class="sideSectionRight">
@@ -29,10 +41,13 @@
                 <div class="HomeImgSection">
                     <img  class="homeImage" src="./Images/me.png" alt="">
                 </div>
-                <h1>Hi, I am Jobayer Rahman</h1>
-                <p>I am a web developer</p>
+                <h1 class="en">Hi, I am Jobayer Rahman</h1>
+                <h1 class="banglaData">হাই, আমার নাম জুবায়ের রাহমান</h1>
+                <p class="en">I am a web developer</p>
+                <p class="banglaData">আমি একজন ওয়েব ডেভেলপার</p>
                 
-                    <a href="#secction5">Contact Me</a>
+                    <a href="#secction5" class="en">Contact Me</a>
+                    <a href="#secction5" class="banglaData">যোগাযোগ করুন</a>
             </div>
             <div class="secction2" id="secction2">
                 <div class="infoSection">
@@ -40,15 +55,20 @@
                         <div class="abImg"></div>
                     </div>
                     <div class="infoData">
-<!--                         <h1 style="font-size: 20px; text-decoration: none; margin-left: 10px;">
-                            About Me:</h1> -->
-                        <p>Hi, I am a diploma graduate computer engineer.  Focused on web development, 
+                        <p class="en">Hi, I am a diploma graduate computer engineer.  Focused on web development, 
                             I have developed kinds of websites. My specialty is to make web applications 
                             with pure HTML, CSS, and js and also with frameworks related to these 
                             languages like Bootstrap, tailwind, and react. This is one of my projects. 
                             My main goal is to build a meaningful and respectful carrier in the Technology 
                             field. here I managed to gather all my projects and social links feel free to 
                             contact me anywhere you like.</p>
+                        <p class="banglaData">হাই, আমি একজন ডিপ্লোমা গ্র্যাজুয়েট কম্পিউটার ইঞ্জিনিয়ার।
+                            আমি বিভিন্ন ধরনের ওয়েবসাইট তৈরি করেছি। 
+                            আমার বিশেষত্ব হল বিশুদ্ধ HTML, CSS, এবং JS এবং Bootstrap, Tellwind 
+                            এবং এই ভাষাগুলির সাথে সম্পর্কিত ফ্রেমওয়ার্ক সহ ওয়েব অ্যাপ্লিকেশন তৈরি করা। 
+                            এটিও আমার প্রকল্পগুলোর মধ্যে একটি । আমার প্রধান লক্ষ্য হল প্রযুক্তি ক্ষেত্রে একটি অর্থবহ 
+                            এবং সম্মানজনক ক্যারিয়ার গড়ে তোলা। এখানে আমি আমার সমস্ত প্রকল্প এবং সামাজিক 
+                            লিঙ্কগুলি সংগ্রহ করার চেষ্টা করেছি। যেখানে আপনি চান আমার সাথে নির্দ্বিধায় যোগাযোগ করতে পারেন৷</p>
                             <!-- <h4>Experties:</h4> -->
                             <div class="icons">
                                 <i class="fa-brands fa-html5 htmlIcon" title="HTML"></i>
@@ -61,8 +81,10 @@
                                 <i class="fa-brands fa-elementor elementorIcon" title="Elementor"></i>
                                 </div>
                             <div class="aboutButton">
-                                <a href="./cv.html" target="_blank">View CV</a>
-                                <a href="#secction5">Contact Me</a>
+                                <a class="en" href="./cv.html" target="_blank">View CV</a>
+                                <a class="en" href="#secction5">Contact Me</a>
+                                <a class="banglaData" href="./cv.html" target="_blank">CV দেখুন</a>
+                                <a class="banglaData" href="#secction5">যোগাযোগ করুন</a>
                             </div>
                         </div>
                     </div>
@@ -72,28 +94,41 @@
                 <div class="servicessCards">
                     <div class="webServCard">
                         <i class="fa-solid fa-laptop"></i>
-                        <h2>Web Design</h2>
-                        <p>I can do frontend web development with raw html, css, bootstrap, js , react. 
+                        <h2 class="en">Web Design</h2>
+                        <p class="en">I can do frontend web development with raw html, css, bootstrap, js , react. 
                             You can check some of my works in the projects secion below.</p>
+                        <h2 class="banglaData">ওয়েব ডিজাইন</h2>
+                        <p class="banglaData">আমি raw html, css, bootstrap, js, react দিয়ে ফ্রন্টএন্ড ওয়েব ডেভেলপমেন্ট করতে পারি।
+                            আপনি নীচের প্রকল্প বিভাগে আমার কিছু কাজ পরীক্ষা করতে পারেন.</p>
                     </div>
                     <div class="graphicCard">
                         <i class="fa-solid fa-paintbrush"></i>
-                        <h2>Graphic Design</h2> 
-                        <p>I can do 2d graphic desgin with photoshop, canva and other graphic design 
+                        <h2 class="en">Graphic Design</h2> 
+                        <p class="en">I can do 2d graphic desgin with photoshop, canva and other graphic design 
                             related softward.T-shirts, Busincness cards etc are my specialties. </p>
+                            <h2 class="banglaData">গ্রাফিক ডিজাইন</h2> 
+                        <p class="banglaData">আমি ফটোশপ, ক্যানভা এবং অন্যান্য গ্রাফিক ডিজাইন সম্পর্কিত সফ্টওয়্যার 
+                            দিয়ে 2d গ্রাফিক ডিজাইন করতে পারি। টি-শার্ট, বিজনেস কার্ড ইত্যাদি আমার বিশেষত্ব। </p>
                     </div>
                     <div class="wordpressCard">
                         <i class="fa-brands fa-wordpress"></i>
-                        <h2>WP Development</h2>
-                        <p>Wordpress is something with which i begained my journey in web development. 
+                        <h2 class="en">WP Development</h2>
+                        <p class="en">Wordpress is something with which i begained my journey in web development. 
                             I can desgnall kinds of websites with wordpress foused in frontend section.</p>
+                        <h2 class="banglaData">WP ডেভেলপমেন্ট</h2>
+                        <p class="banglaData">ওয়ার্ডপ্রেস দিয়ে আমি ওয়েব ডেভেলপমেন্টে আমার যাত্রা শুরু করেছি।
+                            আমি ফ্রন্টএন্ড বিভাগে ওয়ার্ডপ্রেস দিয়ে বিভিন্ন ধরণের ওয়েবসাইট তৈরি করতে পারি।</p>
                     </div>
                 </div>
             </div>
             <div class="secction4" id="secction4">
-                <h1>Projects I have worked on</h1>
-                <p>Here i tried to gether some of th projects i have wotkrd on. 
+                <h1 class="en">Projects I have worked on</h1>
+                <h1 class="banglaData">আমি যেসব প্রকল্পে কাজ করেছি</h1>
+                <p class="en">Here i tried to gether some of th projects i have wotkrd on. 
                     you can have a look at them and let me know if you like any or not.
+                </p>
+                <p class="banglaData">এখানে আমি কাজ করেছি এমন কিছু প্রকল্প সংগ্রহ করার চেষ্টা করেছি। 
+                    আপনি এদের পরীক্ষা করতে পারেন এবং আপনার মতামত আমাকে জানাতে পারেন.
                 </p>
                 <div class="cardsSection">
                 <div>
@@ -181,9 +216,13 @@
             </div>
             <div class="secction5" id="secction5">
                 <div class="formInfoSection">
-                    <h1>My social accounts:</h1>
-                    <p>Here are some of my social medial accounts. if you want to reach out to m through 
+                    <h1 class="en">My social accounts:</h1>
+                    <h1 class="banglaData">আমার সোশ্যাল অ্যাকাউন্ট:</h1>
+                    <p class="en">Here are some of my social medial accounts. if you want to reach out to m through 
                         any one of these sites, feel free to give me a knock.  </p>
+                    <p class="banglaData">এখানে আমার সামাজিক যোগাযোগ মাধ্যম অ্যাকাউন্ট লিঙ্ক কিছু আছে। 
+                        আপনি যদি এই সাইটের যেকোনো একটির মাধ্যমে আমার সাথে যোগাযোগ করতে চান, তাহলে 
+                        নির্দ্বিধায় আমাকে নক দিতে পারেন।  </p>
                         <div class="icons">
                             <a href="https://www.facebook.com/15855jubayer" target="_blank" title="facebook">
                                 <i class="fa-brands fa-facebook"></i>
@@ -198,23 +237,34 @@
                                 <i class="fa-brands fa-github"></i>
                             </a>
                         </div>
-                        <h1>Address:</h1>
-                        <p class="location"><i class="fa-solid fa-location-dot licon"></i>
+                        <h1 class="en">Address:</h1>
+                        <h1 class="banglaData">ঠিকানা:</h1>
+                        <p class="location en"><i class="fa-solid fa-location-dot licon"></i>
                             &nbsp;&nbsp;I am currently located in Bangladesh.</p>
-                        <p class="location" style="font-family: Arial, Helvetica, sans-serif;">
+                        <p class="location banglaData"><i class="fa-solid fa-location-dot licon"></i>
+                            &nbsp;&nbsp;আমি বর্তমানে বাংলাদেশে অবস্থান করছি।</p>
+                        <p class="location en" style="font-family: Arial, Helvetica, sans-serif;">
                             <i class="fa-solid fa-phone licon"></i>
                             &nbsp;&nbsp;+8801********</p>
+                        <p class="location banglaData" style="font-family: Arial, Helvetica, sans-serif;">
+                            <i class="fa-solid fa-phone licon"></i>
+                            &nbsp;&nbsp;+৮৮০১********</p>
                 </div>
                 <div class="formSection">
-                    <h1>Lets Talk:</h1>
-                    <p>Send me a message any how you like</p>
+                    <h1 class="en">Lets Talk:</h1>
+                    <h1 class="banglaData">চলুন কথা বলি:</h1>
+                    <p class="en">Send me a message any how you like</p>
+                    <p class="banglaData">আপনি যেভাবে চান আমাকে বার্তা পাঠাতে পারেন</p>
                     <input type="text" placeholder="First Name">
                     <input type="text" placeholder="Last Name">
                     <input type="email" placeholder="Email">
                     <input type="number" placeholder="Number">
                     <textarea name="" id=""  placeholder="Message"></textarea>
                     <p id="errorMessage" class="errorMessage"></p>
-                    <button class="submit" id="submit">Submit</button>
+                    <button class="submit" id="submit">
+                        <span class="en">Submit</span>
+                        <span class="banglaData">জমা</span>
+                    </button>
                 </div>
             </div>
         </div>
@@ -223,5 +273,9 @@
     <script src="./script.js"></script>
     <!-- fontAwsome -->
     <script src="https://kit.fontawesome.com/c74447f892.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap  js-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+    crossorigin="anonymous"></script>
 </body>
 </html>
