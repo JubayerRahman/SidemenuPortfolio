@@ -11,3 +11,17 @@ const submit = document.getElementById('submit').addEventListener('click',()=>{
         document.getElementById('errorMessage').innerHTML = "";
     },2500)
 })
+
+// switch Seetings
+const bd= document.getElementsByClassName('banglaData')
+const en= document.getElementsByClassName('en')
+
+const switch1 = document.getElementById('switch').addEventListener('click',()=>{
+    console.log('clicked')
+    Array.from(en).forEach((element)=>{
+        element.classList.toggle('en1')
+    })
+    Array.from(bd).forEach((element)=>{
+        element.classList.toggle('banglaDataDis')
+    })
+})
