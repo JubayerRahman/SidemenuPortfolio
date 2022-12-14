@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -11,10 +12,11 @@ body{
     scroll-behavior: smooth;
     color: white;
     font-family: 'Raleway', sans-serif;
+    /* font-family: 'Hind Siliguri', sans-serif; */
 }
 main{
     display: flex;
-
+    color: white;
 }
 
 .sidenevbar{
@@ -38,6 +40,39 @@ main{
 }
 .nevbar button{
     display: none;
+}
+.language{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    justify-content: space-evenly;
+}
+.language h4{
+    font-size: 16px;
+    color: white;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.bangla{
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.language input{
+    transform: rotate(90deg);
+}
+.language input:checked{
+    background-color: orange;
+}
+.en1{
+    display: none;
+}
+.banglaData{
+    display: none;
+}
+.banglaDataDis{
+    display: block;
+    font-family: 'Hind Siliguri', sans-serif;
 }
 .rights{
     position: relative;
@@ -221,10 +256,16 @@ main{
     text-decoration: none;
     background-color: rgb(242,102,33);
     color: white;
-    margin-top: 20px;
+    margin-top: 10px;
     padding: 10px;
     width: fit-content;
     border-radius: 10px;
+}
+.aboutButton{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
 }
 .secction3{
     background-color: rgb(152,193,217);
@@ -437,10 +478,22 @@ textarea{
         top:0px;
         z-index: 10000000000000000000;
     }
+    .language{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+    }
+    .language h4{
+        padding-right: 10px;
+    }
+    .language input{
+        transform: rotate(0deg);
+    }
     .nevbar h3{
         width: 90%;
         position: relative;
         text-align: center;
+        color: white;
     }
     .nevbar button{
         display: flex;
@@ -528,6 +581,7 @@ textarea{
     .infoSection .infoData{
         width: 100%;
         justify-content: space-evenly;
+        margin-top: 20px;
     }
     .icons{
         width: 100%;
@@ -545,7 +599,7 @@ textarea{
         font-size: 14px;
         text-align: center;
         line-height: 18px;
-        margin-top: 40px;
+        margin-top: 100px;
     }
     .aboutButton{
         display: flex;
